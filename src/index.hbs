@@ -2,13 +2,23 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>{{> template/title}}</title>
 </head>
 <body>
 {{> template/header}}
-Index Page<br>
-<input type="text" id="txt-hello"><button class="say-hello">Hello</button><br>
-<button class="goto-sub btn btn-primary">Go To Sub Page</button>
+
+<section class="contents">
+    <div class="dark-layer">
+        <ul class="main-page-img">
+            <li>
+                <img src="./img/leather.jpg" class="main-img-first">
+            </li>
+            <i class="fa fa-circle"></i>
+        </ul>
+    </div>
+</section>
+
+</div>
 {{> template/footer}}
 </body>
 </html>
