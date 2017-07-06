@@ -1,6 +1,6 @@
 @font-color: #333;
-@main-font: #998D81;
-@main-backgroundcolor: #2b2724;
+@main-font-color: #998D81;
+@main-background-color: #2b2724;
 
 header {
   position: absolute;
@@ -9,7 +9,7 @@ header {
   width: 170px;
   height: 100%;
   padding: 5px 5px 0px 5px;
-  background-color: @main-backgroundcolor;
+  background-color: @main-background-color;
   color: #fff;
   z-index: 1000;
 }
@@ -47,6 +47,7 @@ header {
 }
 
 .header-menu-login {
+  color: @font-color;
   font-size: 12px;
   font-weight: 300;
   display: inline-block;
@@ -60,24 +61,27 @@ header {
 }
 
 .header-main-icon {
-  font-size: 35px;
   text-align: center;
+  font-size: 35px;
   color: #998D81;
 }
 
-.header-main-subcontents{
-  color: @main-font;
+.header-main-sub-contents{
+  color: @main-font-color;
+}
+
+.header-main-guide {
   text-align: center;
 }
 
-.header-main-centermemo {
+.header-main-info {
   font-size: 11px;
-  text-align: left;
+  color: #b6b0ab;
 }
 
 .header-main-content {
   text-align: left;
-  color: @main-font;
+  color: @main-font-color;
 }
 
 .fa fa-circle {
@@ -87,8 +91,21 @@ header {
   padding-top: 300px;
 }
 
+
 .login {
   color: #998D81;
+}
+
+.login:hover {
+  color: #998D81;
+}
+
+.join {
+  color: @main-font-color;
+}
+
+.join:hover {
+  color: @main-font-color;
 }
 
 body {
@@ -108,9 +125,23 @@ body {
   height: 700px;
 }
 
+.main-img-second {
+  width: 710px;
+  height: 420px;
+  padding: 50px 7%;
+}
 
+.body-main-photo-left {
+  width: 710px;
+  height: 420px;
+  display: inline-block;
+}
 
-
+.body-main-photo-right {
+  display: inline-block;
+  width: 600px;
+  height: 420px;
+}
 
 ul {
   list-style: none;
@@ -131,4 +162,3 @@ footer {
 .footer-info {
   font-size: 7px;
 }
-
