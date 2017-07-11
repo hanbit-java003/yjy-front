@@ -1,10 +1,10 @@
 {
   "name": "hello",
   "version": "1.0.0",
-  "description": "",
+  "description": "1. install [nodejs](http://nodejs.org)",
   "main": "webpack.config.js",
   "scripts": {
-    "start": "node_modules/.bin/webpack-dev-server --watch",
+    "start": "webpack-dev-server --watch",
     "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -28,5 +28,16 @@
     "bootstrap": "^3.3.7",
     "handlebars": "^4.0.10",
     "jquery": "^3.2.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hanbit-java003/yjy-front.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hanbit-java003/yjy-front/issues"
+  },
+  "homepage": "https://github.com/hanbit-java003/yjy-front#readme"
 }

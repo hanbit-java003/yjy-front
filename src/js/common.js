@@ -1,3 +1,7 @@
-/**
- * Created by 11 on 2017-07-10.
- */
+$('.header-menu > li').on('mouseover', function() {
+    $(this).find('.header-sub-menu').show();
+});
+
+$('.header-menu > li').on('mouseout', function() {
+    $(this).find('.header-sub-menu').hide();
+});
