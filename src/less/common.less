@@ -3,8 +3,6 @@
 @main-background-color: #2b2724;
 
 
-
-
 @header-height: 32px;
 header {
   position: fixed;
@@ -71,14 +69,16 @@ header {
   border-bottom: solid 5px #b5121b;*/
 }
 .header-menu-text {
-  padding: 0px 40px;
-  line-height: 80px;;
+  position: relative;
   cursor: pointer;
   display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 17px 60px 0px 0px;
+
 }
 
-.header-menu-text:hover,
-.header-menu-text > li:hover  {
+.header-menu-text:hover { //이게 메뉴 보이는 거
   color: #b91c22;
   font-weight: bold;
 }
@@ -104,8 +104,8 @@ header {
   cursor: pointer;
 }
 
-.header-sub-menu > li:hover {
-  color: #fff;
+.header-sub-menu:hover {
+  color: rgba(0, 0, 0, 0.58);
 }
 
 
@@ -122,10 +122,8 @@ ul {
 
 footer {
   position: absolute;
-  bottom: 0;
-  left: 0;
   width: 100%;
-  min-width: 940px;
+  //min-width: 940px;
   height: 135px;
   font-size: 11px;
   padding: 33px 0px 0px 303px;
