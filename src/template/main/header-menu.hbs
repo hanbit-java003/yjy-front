@@ -1,6 +1,11 @@
-<div class="header-menu-text">
+<li class="header-menu-text">
     {{text}}
-</div>
-<ul class="header-sub-menu">
-    <li>{{menu}}</li>
-</ul>
+    <div class="header-menu-text2">
+        {{text2}}
+    </div>
+    <ul class="header-sub-menu">
+    {{#each subMenus}}
+        <li>{{menu}}</li>
+    {{/each}}
+    </ul>
+</li>

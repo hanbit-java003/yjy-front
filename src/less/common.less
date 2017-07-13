@@ -8,11 +8,10 @@ header {
   position: fixed;
   width: 1600px;
   height: 150px;
-  min-width: 940px;
+  //min-width: 940px;
   text-align: center;
-  border-bottom: solid 4px #b5121b;
-  background-color: #fff;
-  z-index: 1000;
+  border-bottom: solid 2px #b5121b;
+
 }
 
 .header-logo {
@@ -50,32 +49,32 @@ header {
 .header-main-menu {
   display: inline-block;
   padding-left: 10px;
-  vert-align: top;
+  //vert-align: top;
 }
 
-.header-main-menu > li {
-  position: relative;
-  float: left;
-  margin-top: 10px;
-  margin-right: 5px;
-  margin-left: 60px;
-  font-size: 18px;
-  font-family: Arial;
-  font-weight: bold;
-  cursor: pointer;
-  display: inline-block;
-  line-height: 32px;;
-  /*font-weight: bolder;
-  border-bottom: solid 5px #b5121b;*/
+.hc-main-visual-slide {
+  top: 150px;
 }
+.ht-main-banner {
+  background-position: 50% 50%;
+  background-size: cover;
+  width: 120%;
+}
+
+.header-main-menu:hover {    //마우스 올렸을 때
+  .header-menu-text2 {
+    display: block;
+    background: img('./img/header-menu.jpg');
+  }
+}
+
 .header-menu-text {
-  position: relative;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 18px;
-  font-weight: bold;
-  padding: 17px 60px 0px 0px;
-
+position: relative;
+cursor: pointer;
+display: inline-block;
+font-size: 18px;
+font-weight: bold;
+padding: 17px 60px 40px 5px;
 }
 
 .header-menu-text:hover { //이게 메뉴 보이는 거
@@ -83,34 +82,48 @@ header {
   font-weight: bold;
 }
 
-/*.header-main-menu > span {
-  margin: 1px 0px 0px 0px;
-  font-size: 11px;
-}*/
-@header-sub-menu-width: 130px;
+.header-main-menu > li:hover{
+  background-image: url(../img/header-menu.jpg);
+}
+
+.header-menu-text2 {
+  position: absolute;
+  display: none;
+  color: #999;
+  font-size: 12px;
+}
+
+.header-menu > li:hover {
+  cursor: pointer;
+}
 
 .header-sub-menu {
   position: absolute;
-  display: none;
   top: 100%;
-  left: 0px;
-  border-top: 0;
-  background: url('../img/header-menu.jpg');
+  cursor: pointer;
+  width: 920px;
+  height: 30px;
+  color: #808080;
+  font-size: 13px;
+  text-align: left;
 }
 
-.header-sub-menu > li {
-  display: inline-block;
-  padding: 15px;
-  cursor: pointer;
+.header-sub-menu > li:hover {
+  color: #fff;
+
 }
 
 .header-sub-menu:hover {
   color: rgba(0, 0, 0, 0.58);
+  color: #808080;
 }
 
 
 body {
-
+  width: 1583px;
+  position: relative;
+  //min-width: 1000px;
+  //min-height: 100%;
 }
 
 
@@ -121,13 +134,15 @@ ul {
 }
 
 footer {
-  position: absolute;
+  //clear: both;
   width: 100%;
   //min-width: 940px;
   height: 135px;
   font-size: 11px;
   padding: 33px 0px 0px 303px;
-  background: url("../img/bg_footer.gif")
+  background-image: url(../img/bg_footer.gif);
+
+  //box-sizing: border-box;
 }
 
 .footer-content {
