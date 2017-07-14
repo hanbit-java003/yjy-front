@@ -5,7 +5,7 @@
 
 @header-height: 32px;
 header {
-  position: fixed;
+  //position: absolute;
   width: 1600px;
   height: 150px;
   //min-width: 940px;
@@ -58,13 +58,13 @@ header {
 .ht-main-banner {
   background-position: 50% 50%;
   background-size: cover;
-  width: 120%;
+  //width: 120%;
 }
 
 .header-main-menu:hover {    //마우스 올렸을 때
   .header-menu-text2 {
     display: block;
-    background: img('./img/header-menu.jpg');
+    //background: img('./img/header-menu.jpg');
   }
 }
 
@@ -82,15 +82,18 @@ padding: 17px 60px 40px 5px;
   font-weight: bold;
 }
 
-.header-main-menu > li:hover{
+.header-main-menu:hover {
   background-image: url(../img/header-menu.jpg);
 }
+
 
 .header-menu-text2 {
   position: absolute;
   display: none;
   color: #999;
   font-size: 12px;
+  padding-bottom: 25px;
+  font-family: 나눔고딕;
 }
 
 .header-menu > li:hover {
@@ -106,11 +109,11 @@ padding: 17px 60px 40px 5px;
   color: #808080;
   font-size: 13px;
   text-align: left;
+  font-family: 나눔고딕;
 }
 
 .header-sub-menu > li:hover {
   color: #fff;
-
 }
 
 .header-sub-menu:hover {
@@ -121,10 +124,18 @@ padding: 17px 60px 40px 5px;
 
 body {
   width: 1583px;
-  position: relative;
   //min-width: 1000px;
   //min-height: 100%;
 }
+
+.hc-section-main-list {
+  display: inline-block;
+}
+
+.ht-list-center-comment {
+  display: inline-block;
+}
+
 
 
 ul {
@@ -134,20 +145,19 @@ ul {
 }
 
 footer {
+  background-image: url(../img/bg_footer.gif);
   //clear: both;
   width: 100%;
   //min-width: 940px;
   height: 135px;
   font-size: 11px;
   padding: 33px 0px 0px 303px;
-  background-image: url(../img/bg_footer.gif);
-
   //box-sizing: border-box;
 }
 
 .footer-content {
   font-family: 나눔고딕;
-  margin: 0px 0px 15px 0px;
+  padding: 0px 0px 15px 0px;
   color: #faeff0;
 }
 
