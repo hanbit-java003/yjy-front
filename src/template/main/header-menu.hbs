@@ -1,11 +1,14 @@
 <li class="header-menu-text">
-    {{text}}
+    {{name}}
     <div class="header-menu-text2">
-        {{text2}}
+        {{text}}
     </div>
-    <ul class="header-sub-menu">
+    <ul class="header-sub-menu2">
     {{#each subMenus}}
-        <li>{{menu}}</li>
+        <li newmenu-id="{{id}}">{{menu}}</li>
     {{/each}}
     </ul>
 </li>
+
+
+
