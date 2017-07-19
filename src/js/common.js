@@ -1,6 +1,6 @@
-var menus = require('./model/menu');
+/*var menus = require('./model/menu');*/
 
-function initMenu() {
+/*function initMenu() {
     var template = require('../template/header-menu.hbs');
 
     $('.header-menu').empty();
@@ -10,21 +10,23 @@ function initMenu() {
 
         $('.header-menu').append(menuHtml);
     }
-}
+}*/
 
 
 
-$('.header-logo').on('click', function () {     /*로고 클릭했을 때 메인화면으로 가기*/
+/*$('.header-logo').on('click', function () {     /!*로고 클릭했을 때 메인화면으로 가기*!/
     location.href = './';
-});
+});*/
+/*
 
 $('.header-sub-menu > li').on('click', function () {
     var newmenuId = $(this).attr('newmenu-id');
 
     location.href = './newmenu.html?id=' + newmenuId;
 });
+*/
 
-function initMenu() {
+/*function initMenu() {
     var template = require('../template/header.hbs');
     var menuHtml = template(menus);
 
@@ -37,7 +39,7 @@ function initMenu() {
     $('.header-sub-menu > li').on('mouseout', function () {
         $(this).find('.header-sub-menu2').hide();
     });
-}
+}*/
 /*
 
 $('.header-sub-menu > li').on('mouseover', function() {

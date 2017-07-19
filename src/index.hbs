@@ -6,53 +6,76 @@
     <!--<link href="/favicon.ico" rel="shortcut icon">-->
 </head>
 <body>
-    {{> template/header}}
-    <section class="hc-section-mainBanner">
-        <div class="ht-main-visual-slide-wrap">
-        <div class="hc-main-visual-slide">
-            <img class="ht-main-banner" src='./img/mainBanner_1.jpg'>
-            <!--<img src='./img/mainBanner_2.png'>
-            <img src='./img/mainBanner_3.jpg'>
-            <img src='./img/mainBanner_4.jpg'>-->
-        </div>
-        </div>
-    </section>
-
-    <section class="hc-section-main">
+{{> template/header}}
+<section class="hc-section-mainBanner">
+    <div class="hc-main-visual-slide">
+        <img class="ht-main-banner" src='./img/mainBanner_1.jpg'>
+        <!--<img src='./img/mainBanner_2.png'>
+        <img src='./img/mainBanner_3.jpg'>
+        <img src='./img/mainBanner_4.jpg'>-->
+    </div>
+</section>
+<section class="hc-section-main">
+    <div class="ht-contents-wr" id="contentsWr">
         <div class="hc-section-main-list">
-            <div class="ht-main-list">
-                <div class="hc-list-left"></div>
-                <img src='./img/main_menu_01.jpg'>
-                <div><img src='./img/main_menu_img01.jpg'></div>
-            </div>
-            <div class="ht-list-center">
-                <ul>
-                    <li>
-                        <div><img src='./img/main_menu_02.jpg'></div>
-                        <div>할리스커피 기프트카드 및 할리스콘 구입</div>
-                            <div class="ht-list-center-img">
-                                <img src='./img/main_menu_img02.jpg'>
-                                <li class="ht-list-center-comment">Coffee</li>
-                                <img src='./img/main_menu_img03.jpg'>
-                                <li class="ht-list-center-comment">Beverage</li>
-                                <img src='./img/main_menu_img04.jpg'>
-                                <li class="ht-list-center-comment">Bakery</li>
-                    </li>
-                </ul>
+            <div class="contents po_designMain" id="contents">
+                <div class="contents po_design main" id="contents">
+                    <div class="wr_mainList">
+                        <div class="list_left">
+                            <img src='./img/main_menu_01.jpg'>
+                            <img src="./img/main_menu_img01.jpg">
+                        </div>
+                        <div class="list_center">
+                            <p><img src='./img/main_menu_02.jpg'></p>
+                            <span class="list-center-memo">할리스커피 기프트카드 및 할리스콘 구입</span>
+                            <ul>
+                                <li class="arrow"></li>
+                                <li class="img_wr">
+                                    <img src='./img/main_menu_img02.jpg'>
+                                </li>
+                                <li>
+                                    <li class="list-center-word"><!--Coffee--></li>
+                                <li class="img_wr">
+                                    <img src='./img/main_menu_img03.jpg'>
+                                </li>
+                                <li><!--Beverage--></li>
+
+                                <li class="bar_none">
+                                    <img src='./img/main_menu_img04.jpg'>
+                                <li class="img_wr"></li>
+                                <li><!--Bakery--></li>
+
+                                <li class="arrow"></li>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="list_right">
+                            <p><img src='./img/main_menu_03.jpg'></p>
+                            <img src='./img/main_menu_img05.jpg'>
+                        </div>
+                    </div>
+                </div>
+                <div class="wr_mainList02">
+
+
+                </div>
+                <div class="wr_mainList03">
+                </div>
             </div>
         </div>
-    </section>
-    <section>
-        <div>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </div>
-    </section>
-    <section></section>
-    <section></section>
-    {{> template/footer}}
+    </div>
+</section>
+<section>
+    <div>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</section>
+<section></section>
+<section></section>
+{{> template/footer}}
 </body>
 </html>
