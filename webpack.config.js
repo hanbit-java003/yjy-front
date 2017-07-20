@@ -12,10 +12,7 @@ const pages = [{
     script: 'main',
 }, {
     html: 'sub',
-    script: 'sub'/*,
-}, {
-    html: 'newmenu',
-    script: 'newmenu',*/
+    script: 'sub',
 }];
 
 module.exports = {
