@@ -13,9 +13,9 @@ const pages = [{
 }, {
     html: 'sub',
     script: 'sub',
-/*}, {
-    html: ,
-    script: ,*/
+}, {
+    html: 'newmenu',
+    script: 'newmenu',
 }];
 
 module.exports = {
