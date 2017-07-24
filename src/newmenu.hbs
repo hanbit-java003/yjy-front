@@ -6,90 +6,98 @@
 </head>
 <body>
 {{> template/header}}
-<div class="contents_wr">
-    <div class="">
-        <section class="newmenu-left">
-            <div class="left-menu">
-                <ul class="left-menu-list">
-                    <li class="left-menu-menu">
-                        <img src='./img/newmenu/lnb_menu01.jpg'>
-                        <img src='./img/newmenu/lnb_menu02.jpg'>
-                        <img src='./img/newmenu/lnb_menu03.jpg'>
-                        <img src='./img/newmenu/lnb_menu04.jpg'>
-                        <img src='./img/newmenu/lnb_menu05.jpg'>
-                        <img src='./img/newmenu/lnb_menu06.jpg'>
-                        <img src='./img/newmenu/lnb_menu07.jpg'>
-                    </li>
-                    <li class="left-menu-festival">
-                        <img src='./img/newmenu/img_banner01.jpg'>
-                        <img src='./img/newmenu/img_banner02.jpg'>
-                        <img src='./img/newmenu/bg_banner01.jpg'>
-                    </li>
-                    <li class="left-menu-membership">
-                        <img src='./img/newmenu/img_banner03.jpg'>
-                        <img src='./img/newmenu/img_banner04.jpg'>
-                        <img src='./img/newmenu/bg_banner02.jpg'>
-                    </li>
-                </ul>
+<div class="contents_wr" id="contentsWr">
+    <div class="left-menu">
+        <ul class="left-menu-list">
+            <li class="left-menu-menu">
+                <img src='./img/newmenu/lnb_menu01.jpg'>
+                <img src='./img/newmenu/lnb_menu02.jpg'>
+                <img src='./img/newmenu/lnb_menu03.jpg'>
+                <img src='./img/newmenu/lnb_menu04.jpg'>
+                <img src='./img/newmenu/lnb_menu05.jpg'>
+                <img src='./img/newmenu/lnb_menu06.jpg'>
+                <img src='./img/newmenu/lnb_menu07.jpg'>
+            </li>
+            <li class="left-menu-festival">
+                <img src='./img/newmenu/img_banner01.jpg'>
+                <img src='./img/newmenu/img_banner02.jpg'>
+                <img src='./img/newmenu/bg_banner01.jpg'>
+            </li>
+            <li class="left-menu-membership">
+                <img src='./img/newmenu/img_banner03.jpg'>
+                <img src='./img/newmenu/img_banner04.jpg'>
+                <img src='./img/newmenu/bg_banner02.jpg'>
+            </li>
+        </ul>
+    <div  class="rigth-menu">
+        <div class="newmenu-contents">{{!오른쪽 컨텐츠, HOME 전체 내용 추가하기}}
+            <div class="newmenu-location">
+                Home > Menu > New Menu
             </div>
-        </section>
-        <section class="newmenu-home-menu">
-            <div class="newmenu-contents">{{!오른쪽 컨텐츠, HOME 전체 내용 추가하기}}
-                <div class="newmenu-location">
-                    Home > Menu > New Menu
-                </div>
-                <div class="newmenu-head-title">
-                    NEW MENU
-                </div>
-            <section class="hc-section-info">
+            <h2 class="newmenu-head-title">
+                NEW MENU
+            </h2>
+            <div class="hc-section-info">
                 <div class="hc-section-contents">
                     <div class="hc-tab">
-                        <ul class="hc-tab-btns">
-                            <li class="foods">2017</li>
-                            <li>2016</li>
-                            <li>2015</li>
-                            <li>2014</li>
-                            <li>2013</li>
-                            <li>2012</li>
-                            <li>2011</li>
-                            <li>2010~2009</li>
-                            <li>2008~</li>
+                        <ul class="hc-tab-btns" input type="button">
+                            <li class="season-foods">2017</li>
+                            <li class="season-foods">2016</li>
+                            <li class="season-foods">2015</li>
+                            <li class="season-foods">2014</li>
+                            <li class="season-foods">2013</li>
+                            <li class="season-foods">2012</li>
+                            <li class="season-foods">2011</li>
+                            <li class="season-foods">2010~2009</li>
+                            <li class="season-foods">2008~</li>
                         </ul>
+                        <div>
                         <ul class="hc-tab-contents">
                             <li class="hc-season-2017">
                                 <ul class="hc-season-menu">
-                                    <img src='./img/menuNew_2017-01.jpg'>
-                                    <li class="menu-season-beverage">청포도파인 선라이즈크러쉬(2017년 06월)</li>
-                                    <img src='./img/menuNew_2017-02.jpg'>
-                                    <li class="menu-season-beverage">Hello, summer signature(2017년 04월)</li>
-                                    <img src='./img/menuNew_2017-03.jpg'>
-                                    <li class="menu-season-beverage">Daily Smoothie(2017년 03월)</li>
-                                    <img src='./img/menuNew_2017-04.jpg'>
-                                    <li class="menu-season-beverage">Daily Juice(2017년 03월)</li>
-                                    <img src='./img/menuNew_2017-05.jpg'>
-                                    <li class="menu-season-beverage">티라미스 크림라떼(2017년 03월)</li>
-                                    <img src='./img/menuNew_2017-06.jpg'>
-                                    <li class="menu-season-beverage">핫샌드위치(2017년 03월)</li>
-                                    <img src='./img/menuNew_2017-07.jpg'>
-                                    <li class="menu-season-beverage">딸기레몬티(2017년 01월)</li>
-                                    <img src='./img/menuNew_2017-08.jpg'>
-                                    <li class="menu-season-beverage">딸기크림초코라떼(2017년 01월)</li>
-                                    <img src='./img/menuNew_2017-09.jpg'>
-                                    <li class="menu-season-beverage">리얼 딸기 크림 아발랑쉬(2017년 01월)</li>
+                                    <img src='./img/menuNew_2017-01.jpg' id="season-menu">
+                                    <span class="menu-season-beverage">
+                                        청포도파인 선라이즈크러쉬<br>
+                                        (2017년 06월)</span>
+                                    <img src='./img/menuNew_2017-02.jpg' id="season-menu">
+                                    <span class="menu-season-beverage">
+                                        Hello, summer signature<br>
+                                        (2017년 04월)</span>
+                                    <img src='./img/menuNew_2017-03.jpg' id="season-menu">
+                                    <span class="menu-season-beverage">
+                                        Daily Smoothie<br>
+                                        (2017년 03월)</span>
+                                    <img src='./img/menuNew_2017-04.jpg' id="season-menu">
+                                    <span class="menu-season-beverage">
+                                        Daily Juice<br>
+                                        (2017년 03월)</span>
+                                    <img src='./img/menuNew_2017-05.jpg' id="season-menu">
+                                    <span class="menu-season-beverage">
+                                        티라미스 크림라떼<br>
+                                        (2017년 03월)</li>
+                                    <img src='./img/menuNew_2017-06.jpg' id="season-menu">
+                                    <span class="menu-season-beverage">
+                                        핫샌드위치<br>
+                                        (2017년 03월)</span>
+                                    <img src='./img/menuNew_2017-07.jpg' id="season-menu">
+                                    <span class="menu-season-beverage">
+                                        딸기레몬티<br>
+                                        (2017년 01월)</span>
+                                    <img src='./img/menuNew_2017-08.jpg' id="season-menu">
+                                    <span class="menu-season-beverage">
+                                        딸기크림초코라떼
+                                        <br>(2017년 01월)</span>
+                                    <img src='./img/menuNew_2017-09.jpg' id="season-menu">
+                                    <span class="menu-season-beverage">
+                                        리얼 딸기 크림 아발랑쉬<br>
+                                        (2017년 01월)</span>
                                 </ul>
                             </li>
                         </ul>
+                        </div>
                     </div>
                 </div>
-            </section>
             </div>
-        </section>
+        </div>
     </div>
 </div>
-
-
-
-
-{{> template/footer}}
-</body>
-</html>
