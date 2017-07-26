@@ -11,16 +11,16 @@ $('.header-sub-menu2 > li').on('click', function () {       // header-sub-menu2 
 });
 
 $('.header-main-menu > li').on('mouseover', function() {
-    $(this).find(header-menu-text2).show();
+    $('.header-menu-text2').show();
 
-    /*header-menu-text2.slideToggle();*/
+
 });
 
 
-/*
-$('.header-menu-text').on('mouseout', function() {
-    $(this).attr('.header-sub-menu2').slideToggle();
+
+$('.header-main-menu > li').on('mouseout', function() {
+    $('.header-menu-text2').hide();
 });
-*/
+
 
 
