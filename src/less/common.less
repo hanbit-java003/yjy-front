@@ -3,6 +3,8 @@
 @main-background-color: #2b2724;
 
 
+
+
 @header-height: 32px;
 header {
   //position: absolute;
@@ -14,8 +16,17 @@ header {
   z-index: 1000;
 
 }
-.bs-slider {
-  list-style: none;
+.hc-carousel-visible {
+  /*list-style: none;*/
+}
+
+.hc-carousel-visible > li {
+/*  float: none;
+  list-style: none;*/
+  position: absolute;
+  width: 1920px;
+  z-index: 50;
+  display: inline-block;
 }
 
 .header-logo {
