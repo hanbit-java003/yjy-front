@@ -16,6 +16,10 @@ const pages = [{
 }, {
     html: 'newmenu',
     script: 'newmenu',
+
+},  {
+    html: 'membership',
+    script: 'membership',
 }];
 
 module.exports = {
