@@ -20,6 +20,12 @@ const pages = [{
 },  {
     html: 'membership',
     script: 'membership',
+},  {
+    html: 'hollysis',
+    script: 'hollysis',
+},  {
+    html: 'store',
+    script: 'store',
 }];
 
 module.exports = {

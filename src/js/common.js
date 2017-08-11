@@ -45,7 +45,8 @@ function slide(direction) {
         nextSlide = slides[++currentSlideIndex];
 
         if (!nextSlide) {
-            currentSlideIndex[currentSlideIndex];
+            currentSlideIndex = 0;
+            nextSlide = slides[currentSlideIndex];
         }
     }
     else if (direction === 'right') {
