@@ -26,6 +26,15 @@ const pages = [{
 },  {
     html: 'store',
     script: 'store',
+},  {
+    html: 'member-layer',
+    script: 'member-layer',
+},  {
+    html: 'member-join',
+    script: 'member-join',
+},  {
+    html: 'new-member',
+    script: 'new-member',
 }];
 
 module.exports = {
