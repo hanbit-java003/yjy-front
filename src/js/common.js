@@ -1,6 +1,5 @@
 var menus = require('./model/menu');
 
-
 $('.header-logo').on('click', function () {     // 로고 클릭 시 메인 페이지로 돌아가기
     location.href = './';
 });
@@ -25,31 +24,49 @@ $('.hc-member-layer-login').on('click', function() {        //로그인으로 �
 });
 
 $('.hc-member-layer-join').on('click', function() {        //회원가입으로 이동
-    location.href = './member-join.html';
+    location.href = './new-member.html';
 });
 
 $('.hc-link').on('click', function() {              //글자,  버튼 클릭시 이동
    location.href = './member-join.html';
 });
 
-$('.header-btn-member').on('click', function() {
-    $('body').append('<div class="overlay-layerdarklayer"></div>');
-    $('body').css('overflow', 'hidden');
-
-        $('.overlay-layer').on('click', function() {
-           $(this).remove();
-           $('.body').css('overflow', 'auto');
-        });
+$.ajax({
+   url: '/api/member/signup',
+   method: 'POST',
+   data: {
+       email: email,
+       password: password
+   },
+   success: function (result) {
+       alert('정상적으로 가입이 완료되었습니다.');
+   },
+   error: function () {
+       alert('회원가입 중 오류가 발생하였습니다.');
+   }
 });
 
+$('#hc-sign-up').on('click', function() {
+   var email = $('#hc-sign-up-email').val().trim();
+   var password = $('#hc-sign-up-password').val().trim();
+   var agree = $('#hc-sign-up-agree').prop('checked');
 
-ajax({
-    url: '/api/menu/json',
-    success: function(result) {
-        initMenu(result);
-    }
+   //form 검사를할 때 처음에는  validation 검증을 해야한다.
+   if (!email) {
+       alert('이메일을 입력하세요.');
+       $('#hc-sign-up-email').focus();
+       return;
+   }
+   else if (!password) {
+       alert('비밀번호를 입력하세요.');
+       $('#hc-sign-up-password');
+       return;
+   }
+   else if (!agree) {
+       alert('약관동의를 하셔야합니다.');
+       return;
+   }
 });
-
 
 
 
